@@ -13,7 +13,7 @@ def api_slice(json2python):
     return poke_pic
 
 def wget_pic(imagelink):
-    wget.download(imagelink, '/home/student/mycode')
+    wget.download(imagelink, '/home/student/static/')
 
 def main():
     wget_pic(api_slice(api_pull()))
