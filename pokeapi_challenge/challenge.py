@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#! python3
 
 import requests
 import wget
@@ -13,7 +13,7 @@ def api_slice(json2python):
     return poke_pic
 
 def wget_pic(imagelink):
-    wget.download(imagelink, '/home/student/static/')
+    wget.download(imagelink, r'C:\Users\Andrew\OneDrive\Desktop')
 
 def main():
     wget_pic(api_slice(api_pull()))
